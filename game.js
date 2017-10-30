@@ -131,7 +131,7 @@ function chooseBoard() {
     $('#msgTitle').html('בחרי לוח');
     $('#msgContainer').show().animate({opacity: 1}, 300);
     $('#brighten').show().animate({opacity: 0.8}, 200);
-    data = {boards:[1,2,3]};
+    data = {boards:[1,2,3,4]};
     $('#msgTxt').empty();
     $('#msgTxt').append('<div id="page0" class="boardPage"></div>');
     numPages = 1;
@@ -170,6 +170,9 @@ function showBoard(id) {
     } else if (id == 3) {
 		groups=[['שער','ראש','מפתח','כיכר'],['בירה','מרוד','טרון','מצה'],['לחם','גרנולה','שלווה','גריסים'],['קונג','הנסיך','דום','דיגר']];
 		connectionsRaw = ['עיר!העיר','מצודה!מבצר','גלוטן','משחקי מחשב!מחשב!משחק'];
+    } else if (id == 4) {
+		groups=[[שחור,'שלג','רחוב','בר'],['קרש','מקלות','קסדה','מעיל'],['אופנוע','תשע','מילים','קפה'],['בוקר','זמן','חמש','אמא']];
+		connectionsRaw = ['חתול','סקי','גזוז','קורט וונגוט!וונגוט'];
     }
     connections = [];
     if (connectionsRaw != undefined)
