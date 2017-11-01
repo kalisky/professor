@@ -131,7 +131,7 @@ function chooseBoard() {
     $('#msgTitle').html('בחרי לוח');
     $('#msgContainer').show().animate({opacity: 1}, 300);
     $('#brighten').show().animate({opacity: 0.8}, 200);
-    data = {boards:[1,2,3,4]};
+    data = {boards:[1,2,3,4,5]};
     $('#msgTxt').empty();
     $('#msgTxt').append('<div id="page0" class="boardPage"></div>');
     numPages = 1;
@@ -173,6 +173,9 @@ function showBoard(id) {
     } else if (id == 4) {
 		groups=[['שחור','שלג','רחוב','בר'],['קרש','מקלות','קסדה','מעיל'],['אופנוע','תשע','מילים','קפה'],['בוקר','זמן','חמש','אמא']];
 		connectionsRaw = ['חתול','סקי','גזוז','קורט וונגוט!וונגוט'];
+    } else if (id == 5) {
+		groups=[['מרי ג׳יין','נסלח','כיס','מושלם'],['סלינה','קריסטין','גלוריה','איליין'],['תריס','שרים','ליון','יבוא'],['מונטריאול','אדנה','אדיס אבבה','סיאטל']];
+		connectionsRaw = ['אלאניס מוריסט!אלאניס','ג׳וליה לואיס דרייפוס!ג׳וליה לואיס','מספר!מספרים','ערים תאומות!באר שבע!עיר תאומה באר שבע'];
     }
     connections = [];
     if (connectionsRaw != undefined)
